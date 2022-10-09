@@ -61,7 +61,7 @@ const App = () => {
         setModalContent({...modalInitialState})
     }
 
-    const totalPages = Math.round(total / page)
+    const totalPages = Math.round(total / 12)
     const lastPage = page === totalPages
     const isPosts = Boolean((!lastPage) && (items.length))
 
